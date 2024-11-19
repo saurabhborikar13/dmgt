@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Tracker</title>
+    <link rel="stylesheet" href="assignment-styles.css">
+</head>
+<body>
+    <header class="assignment-header">
+        <h1>📘 Assignment Tracker</h1>
+        <div class="header-clock">
+            <span id="current-date-time"></span>
+        </div>
+        <div class="user-info">
+            <span id="welcome-message"></span>
+            <img src="profile.png" alt="Profile" class="profile-icon">
+            <button id="logout-button">Logout</button>
+        </div>
+    </header>
+    <button id="go-back-dashboard" class="go-back-btn">Go to Dashboard</button>
+
+    <main class="assignment-main">
+        <!-- Left Section for Add Assignment and Image -->
+        <section class="left-section">
+            <div class="add-assignment">
+                <h2>Add New Assignment</h2>
+                <form id="assignment-form">
+                    <input type="text" id="assignment-title" placeholder="Assignment Title" required>
+                    <textarea id="assignment-description" placeholder="Assignment Description in short" rows="3"></textarea>
+                    <div class="date-time-group">
+                        <input type="date" id="assignment-due-date" required>
+                        <input type="time" id="assignment-time" required>
+                    </div>
+                    <button type="submit">Add Assignment</button>
+                </form>
+            </div>
+
+            <div class="assignment-image">
+                <!-- <img src="your-image.jpg" alt="Assignment Image"> -->
+            </div>
+        </section>
+
+        <!-- Right Section for Pending Assignments -->
+        <section class="assignment-list">
+            <h2>Pending Assignments</h2>
+            <ul id="assignment-ul">
+                <!-- Assignments will be dynamically added here -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="assignment.js"></script>
+</body>
+</html>
+

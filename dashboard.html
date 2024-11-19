@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard-styles.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <h1>📚 Assignment & Attendance Tracker 🎓</h1>
+        <div class="header-clock">
+            <span id="current-date-time"></span>
+        </div>
+        <div class="user-info">
+            <span id="welcome-message"></span>
+            <img src="profile.png" alt="Profile" class="profile-icon">
+            <button id="logout-button">Logout</button>
+        </div>
+    </header>
+
+    <main class="dashboard-main">
+        <div class="dashboard-content">
+            <div class="dashboard-options">
+                <!-- Assignment Section -->
+                <div class="option-card">
+                    <div class="card-content">
+                        <img src="assignment-img.jpg" alt="Assignment" class="option-icon">
+                        <div class="text-content">
+                            <h3>Assignment</h3>
+                            <section class="top-assignments-section">
+                                <h2>📋 Upcoming Assignments</h2>
+                                <ul id="upcoming-assignments-list"></ul>
+                            </section>
+                            <button class="option-btn" id="assignment-btn">Manage Assignment</button>
+                            <p id="assignment-deadline"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Attendance Section -->
+                <div class="option-card">
+                    <div class="card-content">
+                        <img src="attendance-img.jpg" alt="Attendance" class="option-icon">
+                        <div class="text-content">
+                            <h3>Attendance</h3>
+                            <p class="option-description">
+                                Your attendance matters! Monitor your attendance percentage, view your overall attendance record, and keep track of any missed classes. Stay organized and on top of your academic performance!
+                            </p>
+                            <button class="option-btn" id="attendance-btn">Manage Attendance</button>
+                            <p id="attendance-percentage"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

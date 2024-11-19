@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment and Attendance Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>📚 Assignment & Attendance Tracker 🎓</h1>
+        <p>Effortlessly keep track of assignments and attendance to stay organized!</p>
+    </header>
+
+    <div class="login-container-wrapper">
+        <div class="form-container" id="login-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+            <p class="message">New here? <a href="#" id="register-link">Register now</a></p>
+        </div>
+
+        <div class="form-container" id="register-container" style="display:none;">
+            <h2>Register</h2>
+            <form id="register-form">
+                <label for="new-username">Username:</label>
+                <input type="text" id="new-username" name="new-username" minlength="6" maxlength="20" required>
+            
+                <label for="new-password">Password:</label>
+                <input type="password" id="new-password" name="new-password" minlength="6" maxlength="20" required>
+            
+                <button type="submit">Register</button>
+            </form>
+            <p class="message">Already have an account? <a href="#" id="login-link">Log in here</a></p>
+        </div>
+
+        <!-- Image placed to the right of the login form -->
+        <div class="image-container">
+            <img src="loginimg.png" alt="Image" class="right-image">
+        </div>
+    
+
+       
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
